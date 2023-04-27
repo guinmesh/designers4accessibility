@@ -13,15 +13,18 @@
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Montserrat", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Opens Sans", sans-serif;
+  --font-display: owners-xxwide, sans-serif;
 }
 
 /* Colors */
 :root {
-  --color-default: #222222;
-  --color-primary: #008374;
-  --color-secondary: #f85a40;
+  --color-default: #014D44;
+  --color-primary: #fff;
+  --color-secondary: #dcbeff;
+  --color-p: #6c757d;
+  --color-hover: rgb(1, 77, 68, 0.6);
 }
 
 /* Smooth scroll behavior */
@@ -43,7 +46,7 @@ a {
 }
 
 a:hover {
-  color: #00b6a1;
+  color: var(--color-hover);
   text-decoration: none;
 }
 
@@ -53,7 +56,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 /*--------------------------------------------------------------
@@ -87,7 +95,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
+  background: var(--color-secondary);
   left: 0;
   right: 0;
   bottom: 0;
@@ -96,7 +104,7 @@ section {
 
 .section-header p {
   margin-bottom: 0;
-  color: #6f6f6f;
+  color: var(--color-p);
 }
 
 /*--------------------------------------------------------------
@@ -132,7 +140,7 @@ section {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: var(--color-default);
 }
 
@@ -180,7 +188,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(248, 90, 64, 0.8);
+  background: var(--color-hover);
   color: #fff;
 }
 
@@ -238,7 +246,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: #00796b;
+  background: var(--color-secondary);
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -272,7 +280,7 @@ section {
 }
 
 .topbar .contact-info i a:hover {
-  color: #fff;
+  color: var(--color-hover);
   text-decoration: underline;
 }
 
@@ -284,7 +292,7 @@ section {
 }
 
 .topbar .social-links a:hover {
-  color: #fff;
+  color: var(--color-hover);
 }
 
 .header {
@@ -311,14 +319,14 @@ section {
 .header .logo h1 {
   font-size: 30px;
   margin: 0;
-  font-weight: 600;
   letter-spacing: 0.8px;
-  color: #fff;
-  font-family: var(--font-primary);
+  color: var(--color-default);
+  font-family: var(--font-display);
+  font-weight: 800;
 }
 
 .header .logo h1 span {
-  color: #f96f59;
+  color: var(--color-secondary);
 }
 
 .sticked-header-offset {
@@ -362,8 +370,8 @@ section {
     padding: 0 3px;
     font-family: var(--font-secondary);
     font-size: 16px;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -400,7 +408,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: var(--color-default);
   }
 
   .navbar .dropdown ul {
@@ -427,8 +435,8 @@ section {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    font-weight: 600;
-    color: #006a5d;
+    font-weight: 400;
+    color: var(--color-primary);
   }
 
   .navbar .dropdown ul a i {
@@ -499,7 +507,8 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    background: var(--color-primary);
+    color: var(--color-default);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -513,8 +522,8 @@ section {
     padding: 10px 20px;
     font-family: var(--font-primary);
     font-size: 15px;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    color: var(--color-default);
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -530,7 +539,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: var(--color-default);
   }
 
   .navbar .getstarted,
@@ -539,13 +548,13 @@ section {
     padding: 8px 20px;
     border-radius: 4px;
     margin: 15px;
-    color: #fff;
+    color: var(--color-default);
   }
 
   .navbar .getstarted:hover,
   .navbar .getstarted:focus:hover {
-    color: #fff;
-    background: rgba(0, 131, 116, 0.8);
+    color: var(--color-default);
+    background: var(--color-secondary);
   }
 
   .navbar .dropdown ul,
@@ -555,8 +564,8 @@ section {
     padding: 10px 0;
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
-    background-color: #007466;
-    border: 1px solid #006459;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
   }
 
   .navbar .dropdown>.dropdown-active,
@@ -565,7 +574,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-default);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -575,7 +584,7 @@ section {
   }
 
   .mobile-nav-hide {
-    color: #fff;
+    color: var(--color-default);
     font-size: 32px;
     cursor: pointer;
     line-height: 0;
@@ -598,8 +607,9 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    /* background: var(--color-secondary); */
     z-index: 9996;
+    box-shadow: 2px 20px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -660,7 +670,7 @@ section {
 .about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: radial-gradient(var(--color-primary) 50%, var(--color-default) 52%);
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -697,7 +707,7 @@ section {
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid var(--color-default);
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -836,7 +846,7 @@ section {
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: radial-gradient(var(--color-primary) 50%, var(--color-default) 52%);
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -996,7 +1006,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  background: var(--color-secondary);
 }
 
 .services .service-item:hover h3 {
@@ -1050,7 +1060,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #009d8b;
+  color: var(--color-primary);
   font-size: 26px;
   line-height: 0;
 }
@@ -1337,7 +1347,7 @@ section {
 
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: #009d8b;
+  color: var(--color-default);
   font-size: 26px;
   line-height: 0;
 }
@@ -1884,11 +1894,11 @@ section {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--color-default);
 }
 
 .hero p {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 117, 0.6);
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -1902,26 +1912,27 @@ section {
   padding: 14px 40px;
   border-radius: 50px;
   transition: 0.3s;
-  color: #fff;
+  color: var(--color-default);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--color-default);
 }
 
 .hero .btn-get-started:hover {
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: var(--color-hover);
+  color: var(--color-hover)
 }
 
 .hero .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: #fff;
+  color: var(--color-default);
   font-weight: 600;
 }
 
 .hero .btn-watch-video i {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-default);
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
@@ -1929,7 +1940,7 @@ section {
 }
 
 .hero .btn-watch-video:hover i {
-  color: #fff;
+  color: var(--color-hover);
 }
 
 @media (max-width: 640px) {
@@ -1963,7 +1974,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #008d7d;
+  background: var(--color-secondary);
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -1995,7 +2006,7 @@ section {
 }
 
 .hero .icon-box:hover {
-  background: #009786;
+  background: var(--color-default);
 }
 
 .hero .icon-box:hover .title a,
