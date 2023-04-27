@@ -1895,10 +1895,11 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   color: var(--color-default);
+  text-align: left;
 }
 
 .hero p {
-  color: rgba(0, 0, 117, 0.6);
+  color: var(--color-p);
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -2571,7 +2572,7 @@ section {
   font-size: 14px;
   background-color: var(--color-primary);
   padding: 50px 0;
-  color: white;
+  color: var(--color-default);
 }
 
 .footer .footer-info .logo {
@@ -2588,8 +2589,9 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #fff;
-  font-family: var(--font-primary);
+  color: var(--color-default);
+  font-family: var(--font-display);
+  text-transform: uppercase;
 }
 
 .footer .footer-info p {
@@ -2612,8 +2614,8 @@ section {
 }
 
 .footer .social-links a:hover {
-  color: #fff;
-  border-color: #fff;
+  color: var(--color-hover);
+  border-color: var(--color-secondary);
 }
 
 .footer h4 {
@@ -2635,7 +2637,7 @@ section {
 
 .footer .footer-links ul i {
   padding-right: 2px;
-  color: rgba(0, 131, 116, 0.8);
+  color: var(--color-hover);
   font-size: 12px;
   line-height: 0;
 }
@@ -2651,14 +2653,14 @@ section {
 }
 
 .footer .footer-links ul a {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-p);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-links ul a:hover {
-  color: #fff;
+  color: var(--color-hover);
 }
 
 .footer .footer-contact p {
