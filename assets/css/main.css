@@ -2026,7 +2026,7 @@ section {
   background: var(--color-default);
 }
 
-.hero .icon-box:hover .title a,
+.hero .icon-box:hover .title,
 .hero .icon-box:hover .icon {
   color: #fff;
 }
