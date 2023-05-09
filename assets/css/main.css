@@ -2624,7 +2624,7 @@ section {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 16px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--color-default);
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -2691,8 +2691,11 @@ section {
   padding-top: 4px;
   text-align: center;
   font-size: 13px;
+  color: var(--color-default);
 }
 
 .footer .credits a {
-  color: #fff;
+  color: var(--color-default) !important;
+  font-weight: 600;
+  text-decoration: underline;
 }
