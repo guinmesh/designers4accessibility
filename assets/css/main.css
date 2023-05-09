@@ -1653,7 +1653,7 @@ section {
 }
 
 .faq .accordion-button:not(.collapsed) {
-  color: var(--color-primary);
+  color: var(--color-default);
   border-bottom: 0;
   box-shadow: none;
 }
