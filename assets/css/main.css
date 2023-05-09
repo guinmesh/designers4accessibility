@@ -23,7 +23,7 @@
   --color-default: #014D44;
   --color-primary: #fff;
   --color-secondary: #dcbeff;
-  --color-p: #6c757d;
+  --color-p: #002B27;
   --color-hover: rgb(1, 77, 68, 0.6);
 }
 
@@ -37,7 +37,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
-  color: var(--color-default);
+  color: var(--color-p);
+  font-size: 1.5em;
 }
 
 a {
@@ -58,6 +59,7 @@ h5,
 h6 {
   font-family: var(--font-display);
   font-weight: 800;
+  color: var(--color-default);
 }
 
 h2 {
@@ -83,6 +85,7 @@ section {
 
 .section-header a {
   text-decoration: underline;
+  font-weight: 800;
 }
 
 .section-header h2 {
@@ -651,6 +654,7 @@ section {
 
 .about .content a {
   text-decoration: underline;
+  font-weight: 800;
 }
 
 .about .content ul {
