@@ -1447,8 +1447,8 @@ section {
 }
 
 .team .member .social a:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: var(--color-default);
+  border-color: var(--color-default);
 }
 
 .team .member .social i {
