@@ -2001,13 +2001,16 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
-}
-
-.hero .icon-box .title a {
   color: var(--color-default);
   transition: 0.3s;
   font-size: 0.8em;
 }
+
+/* .hero .icon-box .title a {
+  color: var(--color-default);
+  transition: 0.3s;
+  font-size: 0.8em;
+} */
 
 .hero .icon-box .icon {
   margin-bottom: 20px;
