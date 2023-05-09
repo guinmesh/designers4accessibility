@@ -41,7 +41,7 @@ body {
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-default);
   text-decoration: none;
 }
 
@@ -79,6 +79,10 @@ section {
 .section-header {
   text-align: center;
   padding-bottom: 60px;
+}
+
+.section-header a {
+  text-decoration: underline;
 }
 
 .section-header h2 {
@@ -645,6 +649,10 @@ section {
   color: var(--color-primary);
 }
 
+.about .content a {
+  text-decoration: underline;
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -660,7 +668,7 @@ section {
   font-size: 20px;
   left: 0;
   top: -3px;
-  color: var(--color-primary);
+  color: var(--color-default);
 }
 
 .about .content p:last-child {
