@@ -1992,8 +1992,9 @@ section {
 }
 
 .hero .icon-box .title a {
-  color: #fff;
+  color: var(--color-default);
   transition: 0.3s;
+  font-size: 0.8em;
 }
 
 .hero .icon-box .icon {
@@ -2003,7 +2004,7 @@ section {
   transition: all 0.3s ease-in-out;
   font-size: 48px;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-default);
 }
 
 .hero .icon-box:hover {
